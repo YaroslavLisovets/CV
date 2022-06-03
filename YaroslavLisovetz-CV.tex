@@ -1,0 +1,38 @@
+% !TeX document-id = {087816ed-8e80-442b-bdfa-b59871357855}
+% !TEX program = XeLaTeX
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\usepackage[russian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{hyperref}
+\geometry{left=1.5cm, top=0.5cm, right=1.5cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
+
+\fontdir[fonts/] % S pecify the location of the included fonts
+
+\colorlet{awesome}{awesome-red}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\name{Yaroslav }{Lisovets}
+\mobile{+7 (964) 796-24-08}
+
+\email{yaroslav.lisovets@outlook.com}
+\github{YaroslavLisovetz}
+
+\position{Android \& Game Developer} % Your expertise/fields
+
+\makecvfooter{}{Yaroslav Lisovets~~~·~~~CV}{} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+	\makecvheader
+	\input{CV-sections/experience.tex}
+	\input{CV-sections/education.tex}
+	\input{CV-sections/skills.tex}
+	\input{CV-sections/extracurricular.tex}
+	\input{CV-sections/hobbies.tex}
+	
+\end{document}
