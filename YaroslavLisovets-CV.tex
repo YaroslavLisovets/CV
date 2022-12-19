@@ -6,7 +6,10 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{multicol}
 \usepackage{framed}
-\usepackage{hyperref}
+\newcommand\rurl[1]{%
+	\href{https://#1}{\nolinkurl{#1}}%
+}
+
 \geometry{left=1.5cm, top=0.5cm, right=1.5cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
 
 \fontdir[fonts/] % S pecify the location of the included fonts
@@ -15,13 +18,14 @@
 
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
-\name{Yaroslav }{Lisovets}
+\name{Yaroslav}{Lisovets}
 \mobile{+7 (964) 796-24-08}
 
-\email{yaroslav.lisovets@outlook.com}
-\github{YaroslavLisovetz}
+\email{yroslavfox@gmail.com} %yaroslav.lisovets@outlook.com
 
-\position{Android \& Game Developer} % Your expertise/fields
+\github{YaroslavLisovets}
+
+\position{Android Developer {\enskip\cdotp\enskip} Network Engineer} % Your expertise/fields
 
 \makecvfooter{}{Yaroslav Lisovets~~~·~~~CV}{} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
 
@@ -29,10 +33,10 @@
 
 \begin{document}
 	\makecvheader
-	\input{CV-sections/experience.tex}
-	\input{CV-sections/education.tex}
-	\input{CV-sections/skills.tex}
-	\input{CV-sections/extracurricular.tex}
-	\input{CV-sections/hobbies.tex}
+	\input{CV-sections/experience}
+	\input{CV-sections/education}
+	\input{CV-sections/skills}
+	\input{CV-sections/extracurricular}
+	\input{CV-sections/hobbies}
 	
 \end{document}
